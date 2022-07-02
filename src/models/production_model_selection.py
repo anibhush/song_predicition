@@ -9,6 +9,8 @@ def log_production_model(config_path):
     config = read_params(config_path)
     mlflow_config = config["mlflow_config"] 
     model_name = mlflow_config["registered_model_name"]
+    print("modelname :", model_name)
+
     model_dir = config["model_dir"]
     remote_server_uri = mlflow_config["remote_server_uri"]
 
