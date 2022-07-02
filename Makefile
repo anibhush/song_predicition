@@ -38,6 +38,17 @@ clean:
 lint:
 	flake8 src
 
+setup:
+	python3 -m venv ~/.song_predicition
+	source ~/.song_predicition/bin/activate
+
+install:
+	pip3 install --upgrade pip &&\
+	  pip3 install -r requirements.txt
+	
+test:
+	python3 -m pytest -vv -cov=hello hello_test.py
+
 ## Upload Data to S3
 sync_data_to_s3:
 ifeq (default,$(PROFILE))

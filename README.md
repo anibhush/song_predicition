@@ -63,7 +63,7 @@ Step 2: install DVC configure dvc:
 
     dvc init
 
-    dvc remote add origin https://dagshub.com/anibhush/Anisha-20110-pset2.dvc
+    dvc remote add origin https://dagshub.com/anibhush/song_predicition.dvc
     dvc remote modify origin --local auth basic
     dvc remote modify origin --local user anibhush
     dvc remote modify origin --local password <DAGSHUB_TOKEN>
@@ -77,7 +77,7 @@ Step 3:
     install mlflow
 
     # add the following in the python code!
-    mlflow.set_tracking_uri("https://dagshub.com/anibhush/Anisha-20110-pset2.mlflow")
+    mlflow.set_tracking_uri("https://dagshub.com/anibhush/song_predicition.mlflow")
     tracking_uri = mlflow.get_tracking_uri()
     print("Current tracking uri: {}".format(tracking_uri))
 
