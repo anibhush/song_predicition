@@ -66,7 +66,7 @@ Step 2: install DVC configure dvc:
     dvc remote add origin https://dagshub.com/anibhush/song_predicition.dvc
     dvc remote modify origin --local auth basic
     dvc remote modify origin --local user anibhush
-    dvc remote modify origin --local password <DAGSHUB_TOKEN>
+    dvc remote modify origin --local password $DAGSHUB_TOKEN
 
     dvc pull -r origin
     dvc add data/raw
