@@ -42,6 +42,9 @@ setup:
 	python3 -m venv ~/.song_predicition
 	source ~/.song_predicition/bin/activate
 
+# loaddata:
+# 	unzip ./data/external/SpotifyFeatures.csv.zip -d ./data/raw
+
 install:
 	pip3 install --upgrade pip &&\
 	  pip3 install -r requirements.txt

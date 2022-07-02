@@ -18,3 +18,7 @@ dvc
 joblib
 scikit-learn
 mlflow
+seaborn
+sklearn
+cookiecutter   
+flask 
